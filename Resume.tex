@@ -1,0 +1,94 @@
+\documentclass{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\textheight=10in
+\pagestyle{empty}
+\linespread{1.3}
+%\raggedbottom
+\raggedright
+
+%  \renewcommand{\encodingdefault}{cg}
+  %\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 2ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+\newcommand{\area}[2]{\vspace*{-9pt} \begin{verse}\textbf{#1}   #2 \end{verse}  }
+\newcommand{\lineunder}{\vspace*{-8pt} \\ \hspace*{-18pt} \hrulefill \\}
+\newcommand{\header}[1]{{\hspace*{-15pt}\vspace*{6pt} \textsc{#1}} \vspace*{-6pt} \lineunder}
+\newcommand{\employer}[3]{{ \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }}
+\newcommand{\contact}[3]{
+\vspace*{-4pt}
+\begin{center}
+{\LARGE \scshape {#1}}\\
+#2 \lineunder 
+#3
+\end{center}
+\vspace*{-8pt}
+}
+\newenvironment{achievements}{\begin{list}{$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}\end{list}}
+\newcommand{\schoolwithcourses}[4]{
+ \textbf{#1} #2 $\bullet$ #3\\ 
+#4 $\bullet$  Relevant Coursework:\\
+\vspace*{8pt}
+}
+\newcommand{\school}[4]{
+ \textbf{#1} #2 $\bullet$ #3\\ 
+#4 \\
+}
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+\small
+\smallskip
+\vspace*{-44pt}
+
+\contact{Tom Auty}
+{931 Dewey Ave., Ann Arbor MI 48104}
+{(248) 701-1328 $\bullet$ tomauty@umich.edu}
+
+\header{Education}
+
+\schoolwithcourses{University of Michigan}{Ann Arbor, MI}{Bachelor of Science in Computational Informatics, 2013}
+{}
+	\area{Computational Informatics}{ $\cdot$ EECS 282 (Programmed in Java/JDBC and utilized threads/binary search trees) $\cdot$ EECS 281 (Studied fundamental data structures and sorting/search algorithms and applied them to create practical programs and games) $\cdot$ EECS 285 (Learned the Java language thoroughly. Built projects using threads, Swing, and factory methods) $\cdot$ SI 339 (Creating websites with HTML5/CSS/JavaScript. Also applying Python knowledge to create games and web applications) $\cdot$ EECS 492 (Creating artificial agents in C++/Java, applying previous computer science knowledge to understand complex agent-based algorithms and models)}
+
+\header{Work History}
+\employer{University of Michigan - Housing IT Office}{2011-Present}{Computer Consultant}
+	\begin{achievements}
+	\item Engage with students and staff to troubleshoot and resolve a variety of computer issues such as network connectivity, hardware issues, life cycles/replacements, and application installation and configuration.
+	\item Regularly consult with and refer problems to network administrators in a fast-paced environment to better diagnose and expedite issues on the University's housing network.
+	\item Took on scripting parts of the inventory management system to increase efficiency of disbanding ranges of housing machines.
+	\item Issue maintenance requests and review them to identify trends and global concerns for determining root-cause solutions.
+	\end{achievements}
+
+\employer{WCBN-FM Ann Arbor}{2010-Present}{Web Developer}
+	\begin{achievements}
+	\item Collaborating with three others to develop a new website for the radio station written in Drupal/PHP. 
+	\item Assisted in the creation of new Drupal modules to peform specific WCBN-exclusive tasks such as streaming from the station's server and entering playlist data.
+	\end{achievements}
+
+\employer{WCBN-FM Ann Arbor}{2011-Present} {Assistant General Manager}
+	\begin{achievements}
+	\item Handle all disbursements, reimbursements and deposits for the station
+	\item Keep detailed records of expenditures and donations/deposits.
+	\item Regularly update the station staff (of around 50 people) with information regarding budgets and guides for receiving reimbursements from the station's SOAS account.
+	\end{achievements}
+
+\employer{PORTALS (portalsmusic.com)}{2011-Present}{Web Developer/Designer, Team Member}
+	\begin{achievements}
+	\item Assisted in developing the site conceptually and programatically from the onset of the site's conception.
+	\item Regularly issue updates and optimize PHP code to improve page load times and improve site aesthetics.
+	\item Collaborate regularly on issues regarding reaching out to other communities and artists.
+	\end{achievements}
+
+\header{Skills}
+\begin{achievements}
+\item Proficiency in software development in Java, Python, C\#, C++, HTML/CSS/JS, MySQL/JDBC, PHP.
+\item Proficiency with UNIX, Windows, Mac OS X.
+\item Familiarity with Threads, Sockets, Android Programming, JSP, ASP/.NET, \LaTeX, Perl, Bash scripting, Ruby (+ Rails)
+\end{achievements}
+
+
+\end{document}
