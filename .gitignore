@@ -1,0 +1,4 @@
+# Extra files created by 'pdflatex #
+####################################
+*.log
+*.aux
